@@ -3,7 +3,7 @@
 int _getSum(vector<int> vec)
 {
     int sum=0;
-    for(int i=0;i<vec.size();i++)
+    for(int i=0;i<(int)vec.size();i++)
     {
         sum+=vec[i];
     }
@@ -12,10 +12,10 @@ int _getSum(vector<int> vec)
 
 bool _contains(vector<int> container, vector<int> contained)
 {
-    for(int i=0;i<container.size();i++)
+    for(int i=0;i<(int)container.size();i++)
     {
         bool flag = false;
-        for(int j=0;j<contained.size();j++)
+        for(int j=0;j<(int)contained.size();j++)
         {
             if(container[i]==contained[j])
             {
